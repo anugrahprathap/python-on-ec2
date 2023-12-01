@@ -5,30 +5,30 @@ files:
     destination: /home/ec2-user/
  
 permissions:
-  - object: /home/ec2-user/scripts/install_dependencies.sh
+  - object: install_dependencies.sh
     owner: root
     mode: 755
     type:
       - file
-  - object: /home/ec2-user/scripts/start_app.sh
+  - object: start_app.sh
     owner: root
     mode: 755
     type:
       - file
-  - object: /home/ec2-user/scripts/stop_app.sh
+  - object: stop_app.sh
     owner: root
     mode: 755
     type:
       - file
 hooks:
   AfterInstall:
-    - location: /home/ec2-user/scripts/install_dependencies.sh
+    - location: install_dependencies.sh
       runas: root
   ApplicationStart:
-    - location: /home/ec2-user/scripts/start_app.sh
+    - location: start_app.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: /home/ec2-user/scripts/stop_app.sh
+    - location: stop_app.sh
       timeout: 300
       runas: root
