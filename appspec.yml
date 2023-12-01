@@ -22,13 +22,13 @@ permissions:
       - file
 hooks:
   AfterInstall:
-    - location: scripts/install_dependencies.sh
+    - location: /home/ec2-user/scripts/install_dependencies.sh
       runas: root
   ApplicationStart:
-    - location: scripts/start_app.sh
+    - location: /home/ec2-user/scripts/start_app.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop_ap.sh
+    - location: /home/ec2-user/scripts/stop_ap.sh
       timeout: 300
       runas: root
