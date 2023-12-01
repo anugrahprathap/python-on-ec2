@@ -7,17 +7,17 @@ files:
 permissions:
   - object: install_dependencies.sh
     owner: root
-    mode: 755
+    mode: 777
     type:
       - file
   - object: start_app.sh
     owner: root
-    mode: 755
+    mode: 777
     type:
       - file
   - object: stop_app.sh
     owner: root
-    mode: 755
+    mode: 777
     type:
       - file
 hooks:
@@ -26,6 +26,10 @@ hooks:
       runas: root
   ApplicationStart:
     - location: start_app.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: stop_app.sh
       timeout: 300
       runas: root
   
