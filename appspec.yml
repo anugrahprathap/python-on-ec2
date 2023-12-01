@@ -15,7 +15,7 @@ permissions:
     mode: 755
     type:
       - file
-  - object: /home/ec2-user/scripts/stop_app.sh
+  - object: /home/ec2-user/scripts/stop_ap.sh
     owner: root
     mode: 755
     type:
@@ -29,6 +29,6 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop_app.sh
+    - location: scripts/stop_ap.sh
       timeout: 300
       runas: root
