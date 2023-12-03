@@ -1,1 +1,1 @@
-sudo rm -rf /home/ec2-user/
+rm -rf /home/ubuntu/
