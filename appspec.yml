@@ -1,36 +1,30 @@
 version: 0.0
 os: linux
+
 files:
   - source: /
     destination: /home/ec2-user/
- 
+
 permissions:
-  - object: install_dependencies.sh
-    owner: root
-    mode: 777
-    type:
-      - file
-  - object: start_app.sh
-    owner: root
-    mode: 777
-    type:
-      - file
-  - object: stop_app.sh
-    owner: root
-    mode: 777
-    type:
-      - file
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+
 hooks:
-  AfterInstall:
-    - location: install_dependencies.sh
+ BeforeInstall:
+    - location: server_clear.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
+  AfterInstall:
+    - location: install_dependencies.sh.sh
+      timeout: 300
+      runas: ec2-user
   ApplicationStart:
     - location: start_app.sh
-      timeout: 300
-      runas: root
+      timeout: 20
+      runas: ec2-user
   ApplicationStop:
     - location: stop_app.sh
-      timeout: 300
-      runas: root
-  
+      timeout: 20
+      runas: ec2-user
