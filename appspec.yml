@@ -14,14 +14,14 @@ permissions:
 hooks:
  
   AfterInstall:
-    - location: /home/ubuntu/scripts/install_dependencies.sh
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: ubuntu
   ApplicationStart:
-    - location: /home/ubuntu/scripts/start_app.sh
+    - location: scripts/start_app.sh
       timeout: 20
       runas: ubuntu
   ApplicationStop:
-    - location: /home/ubuntu/scripts/stop_app.sh
+    - location: scripts/stop_app.sh
       timeout: 20
       runas: ubuntu
