@@ -15,16 +15,16 @@ hooks:
  BeforeInstall:
     - location: server_clear.sh
       timeout: 300
-      runas: ec2-user
+      runas: ubuntu
   AfterInstall:
     - location: install_dependencies.sh.sh
       timeout: 300
-      runas: ec2-user
+      runas: ubuntu
   ApplicationStart:
     - location: start_app.sh
       timeout: 20
-      runas: ec2-user
+      runas: ubuntu
   ApplicationStop:
     - location: stop_app.sh
       timeout: 20
-      runas: ec2-user
+      runas: ubuntu
