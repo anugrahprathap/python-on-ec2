@@ -3,7 +3,8 @@
 
 ## Overview
 
-This repository contains a Python Flask web app Dockerized for consistency, deployed on AWS EC2 via a CI/CD pipeline using Amazon CodePipeline and AWS CodeDeploy. Infrastructure is set up with Terraform.
+
+This repository contains a Python Flask web app Dockerized and deployed on AWS EC2 via a CI/CD pipeline using Amazon CodePipeline and AWS CodeDeploy. The web application is accessible [here](http://51.20.133.246/). Infrastructure is set up with Terraform.
 
 ## Technologies
 
@@ -130,10 +131,4 @@ This repository contains a Python Flask web app Dockerized for consistency, depl
 4. **Deploy Web App:**
    Use AWS CodeDeploy to update deployment group.
 
-## Contributing
 
-Contributions are welcome through issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
