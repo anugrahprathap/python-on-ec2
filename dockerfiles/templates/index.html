@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Amazon</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="loc-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select name="" id="" class="search-sel">
+                    <option value="">All</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search Amazon">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin border">
+                <p>
+                    <span class="nav-span">Hello, sign in</span>
+                </p>
+                <p class="nav-sec">Accounts & Lists</p>
+            </div>
+            <div class="nav-return border">
+                <p>
+                    <span class="nav-return">Returns</span>
+                </p>
+                <p class="nav-sec"> & Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="pannel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops ">
+                <p class="border">Today's Deals</p>
+                <p class="border"> Customer Service</p>
+                <p class="border">Registry</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p> 
+            </div>
+            <div class="panel-emp"></div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="hero-message">
+            You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href=""> Click here to go to amazon.in</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box1 box">
+            <div class="box-content-2">
+                <h2>Gaming accessories</h2>
+                <div class="box-img-1" style="background-image: url('{{ url_for('static', filename='images/headset.jpg') }}');"></div>
+                
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/keyboard.jpg') }}') ;"></div>
+                <div class="box-label">Headsets</div>
+                <div class="box-label">Keyboards</div>
+                <div class="box-img-1" style="background-image: url('{{ url_for('static', filename='images/mouse.jpg') }}');"></div>
+                <div class="box-img-1" style="background-image: url('{{ url_for('static', filename='images/chair.jpg') }}');"></div>
+                <!-- <div class="box-img-1" style="background-image: url('images/chair.jpg');"></div> -->
+                <div class="box-label">Computer mice</div>
+                <div class="box-label">Chairs</div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Top Deal</h2>
+            <div class="box-img" style="background-image:url('{{ url_for('static', filename='images/womshoe.jpg') }}');height:130px"></div>
+            <p>Shop Now</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Beauty picks</h2>
+            <div class="box-img" style="background-image:url('{{ url_for('static', filename='images/bauty.jpg') }}') ;"></div>
+            <p>Shop Now</p>
+            </div>
+        </div>
+        <div class="box4 box"><div class="box-content">
+            <h2></h2>
+            <div class="signin">
+                <h1>Sign in for the best experience</h1>
+                <button>Sign in securely</button></div>
+        <div class="box-img-prime" style="background-image:url('{{ url_for('static', filename='images/prime.jpg') }}');"></div>
+        
+        </div></div>
+        <div class="box1 box">
+            <div class="box-content-2">
+                <h2>Refresh your space</h2>
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/dining.jpg') }}');"></div>
+                
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/home.jpg') }}');"></div>
+                <div class="box-label">Dining</div>
+                <div class="box-label">Home</div>
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/Kitchen.jpg') }}');"></div>
+                
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/bauty.jpg') }}');"></div>
+                <div class="box-label">Kitchen</div>
+                <div class="box-label">Health and Beauty</div>
+            <p>See more</p>
+            </div>
+
+        </div>
+        <div class="box2 box">
+            <div class="box-content-2">
+                <h2>Easy updates for elevated spaces</h2>
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/bakets.jpg') }}') ;"></div>
+                
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/hardware.jpg') }}') ;"></div>
+                <div class="box-label">Baskets & hampers</div>
+                <div class="box-label">Hardware</div>
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/furniture.jpg') }}') ;"></div>
+                
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/wallpeaper.jpg') }}');"></div>
+                <div class="box-label">Accent furniture</div>
+                <div class="box-label">Wallpaper & paint</div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+            <div class="box-img" style="background-image:url('{{ url_for('static', filename='images/health.jpg') }}') ;"></div>
+            <p>Shop Now</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content-2">
+                <h2>Fashion trends you like</h2>
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/dress.jpg') }}');"></div>
+                
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/knits.jpg') }}') ;"></div>
+                <div class="box-label">Dress</div>
+                <div class="box-label">Knits</div>
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/jackets.jpg') }}');"></div>
+                
+                <div class="box-img-1" style="background-image:url('{{ url_for('static', filename='images/jewelry.jpg') }}') ;"></div>
+                <div class="box-label">Jackets</div>
+                <div class="box-label">Jewelry</div>
+            <p>Explore more</p>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="foot-p1">Back to top</div>
+        <div class="foot-p2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="">Careers</a>
+                <a href="">Blog</a>
+                <a href="">About Amazon</a>
+                <a href="">Investor Relations</a>
+                <a href="">Amazon Devices</a>
+                <a href="">Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a href="">Sell products on Amazon</a>
+                <a href="">Sell apps on Amazon</a>
+                <a href="">Advertise Your Products</a>
+                <a href="">Become an Affiliate</a>
+                <a href="">Self-Publish with Us</a>
+                <a href="">Host an Amazon Hub</a>
+                <a href="">See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="">Careers</a>
+                <a href="">Blog</a>
+                <a href="">About Amazon</a>
+                <a href="">Investor Relations</a>
+                <a href="">Amazon Devices</a>
+                <a href="">Amazon Science</a>
+            </ul>
+        </div>
+        <div class="foot-p3">
+            <div class="logo"></div>
+        </div>
+        <div class="foot-p4">
+            <div class="pages">
+                <a href="">Conditions of Use</a>
+                <a href="">Privacy Notice</a>
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
