@@ -1,2 +1,3 @@
-docker stop docker-image
+docker stop $(docker ps -q)
+
 
