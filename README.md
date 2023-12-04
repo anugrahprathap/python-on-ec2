@@ -96,15 +96,16 @@ This repository contains a Python Flask web app Dockerized for consistency, depl
 2. **`scripts/start_app.sh`:**
    ```bash
    #!/bin/bash
-   cd /home/ubuntu/app
-   docker-compose up -d
+   cd /home/ubuntu/
+   docker build -t docker-image ./dockerfiles
+   docker run -d -p 80:8000 docker-image
+     
    ```
 
 3. **`scripts/stop_app.sh`:**
    ```bash
    #!/bin/bash
-   cd /home/ubuntu/app
-   docker-compose down
+   docker stop $(docker ps -q)
    ```
 
 ## EC2 Instance Deployment
@@ -118,7 +119,9 @@ This repository contains a Python Flask web app Dockerized for consistency, depl
    ```bash
    sudo apt install docker.io
    sudo apt install -y python3-pip
-   sudo pip install awscli
+   wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
+   sudo chmod +x ./install
+   sudo ./install auto
    ```
 
 3. **Install CodeDeploy Agent:**
