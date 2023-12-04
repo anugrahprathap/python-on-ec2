@@ -125,10 +125,8 @@ This repository contains a Python Flask web app Dockerized and deployed on AWS E
    sudo ./install auto
    ```
 
-3. **Install CodeDeploy Agent:**
-   Follow provided script in `scripts/`.
 
-4. **Deploy Web App:**
+3. **Deploy Web App:**
    Use AWS CodeDeploy to update deployment group.
 
 
